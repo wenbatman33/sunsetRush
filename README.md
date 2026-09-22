@@ -46,11 +46,3 @@ Express 僅提供靜態檔案，可用 `PORT` 指定連接埠。排行榜不使�
 ## GitHub Pages
 
 main 推送後由 GitHub Actions 發布。只複製原始 HTML、CSS、ESM、素材及 npm 安裝的 Babylon.js 模組，不進行打包或轉譯。所有網址採相對路徑，支援 /sunsetRush/ 子目錄。手動準備靜態目錄可執行 `node scripts/prepare-pages.js`。Pages 網址與 localhost 的 localStorage 分開保存。
-
-## 精緻卡通渲染
-
-使用分離車輪／把手的 CC0 公路跑車，以及 Quaternius 人形骨架騎士。骨架騎乘姿勢、手指握把、上身側傾和落地避震由呈現層控制，不修改碰撞與分數。車漆清漆層、金屬／橡膠分材質，瀝青使用法線及粗糙度貼圖；夜間窗戶發光，車燈使用聚光燈，隧道循環使用三盞局部光源。
-
-手機維持最高 2 倍像素解析度、1024 陰影與 2x MSAA（WebGL2）；電腦使用 2048 陰影、4x MSAA、輕量 SSAO 與 Bloom。WebGL1 回退至 FXAA。實體手機效能依裝置而異。
-
-僅 localhost 可用 `?scene=tunnel&light=night` 檢查场景（city／forest／tunnel／coast），不增加遊戲畫面說明，也不影響正式站起始位置。
