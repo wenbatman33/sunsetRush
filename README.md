@@ -57,3 +57,11 @@ main 推送後由 GitHub Actions 發布。只複製原始 HTML、CSS、ESM、素
 僅 localhost 可用 `?scene=tunnel&light=night` 檢查場景（city／forest／tunnel／coast），不增加遊戲畫面說明，也不影響正式站起始位置。
 
 本機騎士檢驗：開啟 `http://localhost:5173/?rider=1`，可切換正面、側面、背面並進入實際遊玩。此介面僅在 localhost 啟用。
+
+## 載入最佳化
+
+原生 ESM 改為直接匯入用到的 Babylon 模組與目前素材使用的六種 glTF 擴充，避免整包入口連帶載入未使用功能。天空沿用原 HDR 與相同的 PBR 天空盒設定。
+
+模型和 HDR 提供 `.gz` 無損版本，由瀏覽器內建 DecompressionStream 解壓；不支援的瀏覽器會讀原檔。路面三張貼圖改用 WebP，維持 1024×1024。實際使用的模型與貼圖檔案合計由 9.08 MB 降至 3.45 MB（約 62%，不含 JS 與 HTTP 額外壓縮）；這是下載檔案大小比較，不是實體手機載入秒數測量。
+
+更新 GLB／HDR／JPG 後執行 `python3 scripts/compress-assets.py`（需要 Pillow）同步壓縮版本；`npm test` 會檢查模型／HDR 解壓後與來源逐位元相同。GitHub Pages 直接複製這些壓縮檔，仍不需要打包程式碼。
