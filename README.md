@@ -42,3 +42,7 @@ Express 僅提供靜態檔案，可用 `PORT` 指定連接埠。排行榜不使�
 ## 驗證
 
 `npm test` 包含不規則關卡、四車道邊界及物件分布、跳躍／跳板、三次撞擊停頓、加速、四場景靜態障礙通行路線、本機排行儲存、排序、日期篩選及重複紀錄測試。手機驗證使用瀏覽器 390×844 視窗與觸控按鈕，並非實體手機硬體效能測量。
+
+## GitHub Pages
+
+main 推送後由 GitHub Actions 發布。只複製原始 HTML、CSS、ESM、素材及 npm 安裝的 Babylon.js 模組，不進行打包或轉譯。所有網址採相對路徑，支援 /sunsetRush/ 子目錄。手動準備靜態目錄可執行 `node scripts/prepare-pages.js`。Pages 網址與 localhost 的 localStorage 分開保存。
