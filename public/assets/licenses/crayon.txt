@@ -1,0 +1,7 @@
+Crayon Asset Library
+https://app.usecrayon.ai/assetlibrary#license
+Retrieved 2026-09-22
+
+Free for personal and commercial use in games and interactive projects. You may modify and redistribute the assets as long as they remain free. You may not sell the assets themselves, individually or as an asset pack.
+
+Assets are included free as components of this game. Original embedded collision meshes are hidden for rendering; gameplay uses lane collision volumes.

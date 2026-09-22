@@ -1,0 +1,187 @@
+[
+  {
+    "path": "assets/textures/asphalt-normal.jpg",
+    "bytes": 1240122,
+    "sha256": "42a1c381b53204e83a982db2864479a30bc127bbdeebb1006f8ee51bff099df3"
+  },
+  {
+    "path": "assets/textures/asphalt.jpg",
+    "bytes": 731707,
+    "sha256": "1aa5ce99f58a625c71d48cfc3e68b65ca85ccb00f39e045c0a928608a0ea25ed"
+  },
+  {
+    "path": "assets/textures/sky.hdr",
+    "bytes": 1435119,
+    "sha256": "fd94c84997b8a3c353b62c2125a9b44e19509956986a126e472684432a02d798"
+  },
+  {
+    "path": "assets/models/grass.glb",
+    "bytes": 1496,
+    "sha256": "892ca5d51fd4f733db7df48161e1fec2372880787ba1dc30ea1ff47ba342fbe8"
+  },
+  {
+    "path": "assets/models/beach.glb",
+    "bytes": 230236,
+    "sha256": "78a226e827eb17e4afdef201c149aba0c0e37ebfbcc46445db54be1523eb20b1"
+  },
+  {
+    "path": "assets/models/asphalt.glb",
+    "bytes": 1304,
+    "sha256": "cab10498c10ecd4723158070ca6ca8e7dcd2a91b5c64ee4c59dd7bb86434561a"
+  },
+  {
+    "path": "assets/models/cloudline-tower.glb",
+    "bytes": 190840,
+    "sha256": "35741dbf1cdfbb804643beadef7094402835556a8c8969f571da7751ca2122ff"
+  },
+  {
+    "path": "assets/models/sea.glb",
+    "bytes": 13548,
+    "sha256": "bed84a2a3dfdccb983c04bab49a354ac8eb98b596014c678524f88abb3605237"
+  },
+  {
+    "path": "assets/models/motorcycle.glb",
+    "bytes": 109608,
+    "sha256": "a20a32a457e76cec52eb6c65919f3be8dbbe02d9b4a8ec5e789f11a07a4f39fc"
+  },
+  {
+    "path": "assets/models/classic-street-lamp.glb",
+    "bytes": 76952,
+    "sha256": "69c965bbd313a3e044e4f281ea89286ab6e6aa64d030b60a8c21fde766fab43c"
+  },
+  {
+    "path": "assets/models/meadow-apartments.glb",
+    "bytes": 222208,
+    "sha256": "1678fb06170ddfb270e8d20d9082d8fdcfdaf7679478983bb79a06152306954a"
+  },
+  {
+    "path": "assets/models/human-rider.glb",
+    "bytes": 124184,
+    "sha256": "dce0bcfef0f629f6ccaf3f55b5f3571d3e9eed9da57274c7e3d3b502e8951fb4"
+  },
+  {
+    "path": "assets/models/ramp.glb",
+    "bytes": 6996,
+    "sha256": "a6f2c0e4f01fded7f9020cba4a0eb304d3724a9086071b52d5ae7e2b63d47253"
+  },
+  {
+    "path": "assets/models/lane-mark.glb",
+    "bytes": 1300,
+    "sha256": "141305d813d1785633d42463146c487c8be3e3edc8b3dfc22fa05e3a054e3371"
+  },
+  {
+    "path": "assets/models/roadStraight.glb",
+    "bytes": 3644,
+    "sha256": "6b1f92e5859d417951f259e52c9c9eadad5bfceb3b545e074049bbc17d02f00d"
+  },
+  {
+    "path": "assets/models/helmet.glb",
+    "bytes": 43344,
+    "sha256": "56ae482500e4ca45139e150f1c5be0b29f212cd8a2ecc9be50fdd53b165b97e6"
+  },
+  {
+    "path": "assets/models/sedan.glb",
+    "bytes": 184600,
+    "sha256": "df2ffacd38e02e3053d1ccafc4dc48d044de3ae762920a3815edbfe7ed455be5"
+  },
+  {
+    "path": "assets/models/construction-barrier.glb",
+    "bytes": 18532,
+    "sha256": "67d40cf1d24420f7c0aa29cee34988affc98119d06ce57ca904e11d9d0cb712b"
+  },
+  {
+    "path": "assets/models/box.glb",
+    "bytes": 26532,
+    "sha256": "cd322c12f8698f5ea32f997574e22879ec47571cf54c17a6ae698e9f9d4bea9f"
+  },
+  {
+    "path": "assets/models/rail.glb",
+    "bytes": 5940,
+    "sha256": "c60d60e34b675d5d832d91c6f5d7c125a1020953c2e22dbcd1215397990aaaf4"
+  },
+  {
+    "path": "assets/models/park-bench.glb",
+    "bytes": 125116,
+    "sha256": "3dd046cafb60a84b13017e77979561851ca1955fd15315b956475d9a7819d043"
+  },
+  {
+    "path": "assets/models/coastal-palm.glb",
+    "bytes": 146752,
+    "sha256": "a60b30e2ed539f1834a9345809af27d89160560d8c374021b0f5d91e098eb75e"
+  },
+  {
+    "path": "assets/models/autumn-maple.glb",
+    "bytes": 160768,
+    "sha256": "dd6d93a11fa8d5f992143817a2ae8acb27217efc08106801b9b4290a7989c717"
+  },
+  {
+    "path": "assets/models/taxi.glb",
+    "bytes": 187996,
+    "sha256": "300c2bec9414752bd0f8ceadbe71bab90a3ed885e088aa0e752ec6f4249b8434"
+  },
+  {
+    "path": "assets/models/tile-low.glb",
+    "bytes": 14288,
+    "sha256": "f39542df06d32f25806c9025915059d40ec2e03b81b7a1e4a55c5476387cb241"
+  },
+  {
+    "path": "assets/models/sakura-bloom.glb",
+    "bytes": 160132,
+    "sha256": "5832ebd577034d3fedf3d9bb24c8b32c1832c14ed777a525292aa9a3a860945e"
+  },
+  {
+    "path": "assets/models/overheadRound.glb",
+    "bytes": 9136,
+    "sha256": "47147adaed1d387c6554145faedf5c6e969ec1e8518a4b4c55a4fda9761b817b"
+  },
+  {
+    "path": "assets/models/suv.glb",
+    "bytes": 219948,
+    "sha256": "c6446aad5173f89aa1b8a61fd72fb203879cc7bba0faf659814c9a4c3c691428"
+  },
+  {
+    "path": "assets/models/gold-coin.glb",
+    "bytes": 30848,
+    "sha256": "c781b0475d5b5985d428486a4230e81321ad294d702e76fbc40007979d77a3a6"
+  },
+  {
+    "path": "assets/models/cloud-oak.glb",
+    "bytes": 146964,
+    "sha256": "b407c8f3ea8948233d9e2792f8937ba21dc585250b3d9734024f05273a323981"
+  },
+  {
+    "path": "assets/models/delivery.glb",
+    "bytes": 252672,
+    "sha256": "3a388290a751d9db7ef5df91ed62b44ea9dd55cfe4d6f027123ea15095593521"
+  },
+  {
+    "path": "assets/models/lightPostModern.glb",
+    "bytes": 16584,
+    "sha256": "8fd8fccc65f53cf54efff81546b90be23d8c32a4ea85b5bbc79c6c9d123cb925"
+  },
+  {
+    "path": "assets/models/freshfield-market.glb",
+    "bytes": 217216,
+    "sha256": "ccb08aabbc30414452c1bc7e11c05aba27ea9a692926ad1f813ca21b6ac77c4a"
+  },
+  {
+    "path": "assets/models/cone.glb",
+    "bytes": 29120,
+    "sha256": "d829469df03a84c4d057cf4add5ed1e73d6d47b59768840c438ea7215aa720a7"
+  },
+  {
+    "path": "assets/models/cornerleaf-cafe.glb",
+    "bytes": 223352,
+    "sha256": "13e26947ae703a07037068318e676e90639cd6b36a063975ba2fe5fc3d6528f0"
+  },
+  {
+    "path": "assets/models/alpine-pine.glb",
+    "bytes": 111512,
+    "sha256": "b3bdbe948ebfd9c3a35bccc92cef243c8c33a5c66ed7d7319c96dc86216ec913"
+  },
+  {
+    "path": "assets/models/sageworks-offices.glb",
+    "bytes": 222592,
+    "sha256": "99a7478a37ee47ed00e58f8d5dc55c9b1a0a259190f3768311f27b00c5363cb1"
+  }
+]

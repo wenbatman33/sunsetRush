@@ -1,0 +1,16 @@
+{
+  "name": "scooter-sunset",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server/index.js",
+    "start": "node server/index.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "dependencies": {
+    "@babylonjs/core": "^8.0.0",
+    "@babylonjs/loaders": "^8.0.0",
+    "express": "^5.1.0"
+  }
+}
