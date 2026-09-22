@@ -37,7 +37,7 @@ Express 僅提供靜態檔案，可用 `PORT` 指定連接埠。排行榜不使�
 
 ## 素材與修改
 
-來源與授權見 `public/assets/ATTRIBUTION.md` 與 `public/assets/licenses/`。所有道路、建築、人物、車輛與收集物均來自下載的 GLB 模型；沒有程式生成 SVG 或 Phaser Graphics 素材。路面及標線是從 Kenney 原模型中抽取既有三角面。速度線為非互動 HUD 動態效果；音效使用 Web Audio 合成。
+來源與授權見 `public/assets/ATTRIBUTION.md` 與 `public/assets/licenses/`。道路、建築、人物、車輛與收集物來自下載的 GLB 模型；全罩安全帽依參考輪廓製成獨立 GLB；沒有程式生成 SVG 或 Phaser Graphics 素材。路面及標線是從 Kenney 原模型中抽取既有三角面。速度線為非互動 HUD 動態效果；音效使用 Web Audio 合成。
 
 ## 驗證
 
@@ -46,3 +46,13 @@ Express 僅提供靜態檔案，可用 `PORT` 指定連接埠。排行榜不使�
 ## GitHub Pages
 
 main 推送後由 GitHub Actions 發布。只複製原始 HTML、CSS、ESM、素材及 npm 安裝的 Babylon.js 模組，不進行打包或轉譯。所有網址採相對路徑，支援 /sunsetRush/ 子目錄。手動準備靜態目錄可執行 `node scripts/prepare-pages.js`。Pages 網址與 localhost 的 localStorage 分開保存。
+
+## 精緻卡通渲染
+
+使用 Poly by Google 的 CC BY 3.0 摩托車，將原模型車輪分離並保留原始配色，搭配 Quaternius 人形骨架騎士及貼合曲面面罩的全罩安全帽。骨架騎乘姿勢、手指握把、壓車和落地避震由呈現層控制，不修改碰撞與分數。車殼、輪胎、擋風鏡與燈具分材質，瀝青使用法線及粗糙度貼圖；夜間窗戶發光，車燈使用聚光燈，隧道循環使用三盞局部光源。
+
+手機維持最高 2 倍像素解析度、1024 陰影與 2x MSAA（WebGL2）；電腦使用 2048 陰影、4x MSAA、輕量 SSAO 與 Bloom。WebGL1 回退至 FXAA。實體手機效能依裝置而異。
+
+僅 localhost 可用 `?scene=tunnel&light=night` 檢查場景（city／forest／tunnel／coast），不增加遊戲畫面說明，也不影響正式站起始位置。
+
+本機騎士檢驗：開啟 `http://localhost:5173/?rider=1`，可切換正面、側面、背面並進入實際遊玩。此介面僅在 localhost 啟用。

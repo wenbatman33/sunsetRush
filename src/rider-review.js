@@ -1,0 +1,11 @@
+// Local-only review controls, never part of the game's player interface.
+export function createRiderReview(camera,Vector3){
+ const style=document.createElement('style');style.textContent=`body.rider-review>header,body.rider-review>#home,body.rider-review>#hud,body.rider-review>#overlay,body.rider-review>#touch-controls,body.rider-review>#speedlines{display:none!important}.rider-review-bar{position:fixed;z-index:50;bottom:24px;left:50%;transform:translateX(-50%);display:flex;gap:8px;align-items:center;background:#faf6eb;padding:12px;border-radius:16px;box-shadow:0 4px 24px #0002;white-space:nowrap}.rider-review-bar button,.rider-review-bar a{padding:12px 16px;border-radius:10px;background:#e7e3d9;color:#204638;font:600 14px system-ui;text-decoration:none}.rider-review-bar button[aria-pressed=true]{background:#235646;color:white}.rider-review-title{position:fixed;top:24px;left:24px;z-index:50;padding:12px 18px;background:#faf6eb;border-radius:12px;color:#204638;font:600 16px system-ui}@media(max-width:600px){.rider-review-bar{gap:4px;padding:8px}.rider-review-bar button,.rider-review-bar a{padding:12px 9px}}`;
+ document.head.append(style);document.body.classList.add('rider-review');
+ const title=document.createElement('div');title.className='rider-review-title';title.textContent='騎士比例檢驗 · 僅本機';document.body.append(title);
+ const bar=document.createElement('nav');bar.className='rider-review-bar';bar.setAttribute('aria-label','騎士檢驗角度');document.body.append(bar);
+ let angle='front';const positions={front:[3,2.1,4],side:[4.5,1.7,0],back:[3,2,-4],helmet:[.66,1.7,1.0]};
+ for(const [id,label]of [['front','正面'],['side','側面'],['back','背面'],['helmet','安全帽']]){const button=document.createElement('button');button.textContent=label;button.setAttribute('aria-pressed',String(angle===id));button.onclick=()=>{angle=id;bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));};bar.append(button);}
+ const play=document.createElement('a');play.href='./';play.textContent='實際遊玩';bar.append(play);
+ return ()=>{const distance=innerWidth<600?1.45:1;const p=positions[angle];camera.position.set(p[0]*distance,p[1],p[2]*distance);camera.fov=.62;camera.setTarget(new Vector3(0,angle==='helmet'?1.69:1.05,angle==='helmet'?.15:0));};
+}
